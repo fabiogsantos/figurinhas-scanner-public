@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!--
   Página da Política de Privacidade do Figurinhas Scanner (GitHub Pages).
-  Conteúdo equivalente a docs/politica_privacidade.md.
-  Ao publicar: confira o nome do responsável e a data de "Última atualização".
+  Cópia versionada em docs/index.html do repo privado — mudar as duas iguais.
+  Ao mudar: atualize a data de "Última atualização" e confira a seção #excluir-conta (link da Play).
 -->
 <html lang="pt-BR">
 <head>
@@ -30,11 +30,12 @@
     }
     h2 { color: var(--azul); font-size: 19px; margin: 26px 0 8px; }
     h2:first-child { margin-top: 0; }
-    ul { padding-left: 20px; }
+    ul, ol { padding-left: 20px; }
     li { margin: 4px 0; }
     code { background: #eef0f3; padding: 1px 6px; border-radius: 5px; font-size: 90%; }
     a { color: var(--azul); }
     .resumo { background: #eaf6ea; border-left: 4px solid var(--verde2); }
+    .alerta { border-left: 4px solid #d93025; }
     footer { text-align: center; color: var(--suave); font-size: 13px; padding: 0 20px 40px; }
     .data { color: var(--suave); font-size: 13px; }
   </style>
@@ -45,89 +46,146 @@
     <p>Figurinhas Scanner</p>
   </header>
   <main>
-    <p class="data"><strong>Última atualização:</strong> 15 de junho de 2026</p>
+    <p class="data"><strong>Última atualização:</strong> 30 de setembro de 2026</p>
 
-    <p>O <strong>Figurinhas Scanner</strong> ("o aplicativo") é um app de uso pessoal para organizar
-    e escanear figurinhas do álbum da Copa do Mundo FIFA 2026. Esta política explica quais dados o
-    aplicativo utiliza e como eles são tratados.</p>
+    <p>O <strong>Figurinhas Scanner</strong> ("o aplicativo") ajuda a organizar e escanear figurinhas do
+    álbum da Copa do Mundo FIFA 2026 e a encontrar pessoas para trocar. Funciona no Android e no
+    navegador (<a href="https://app.figurinhas-scanner.workers.dev">app.figurinhas-scanner.workers.dev</a>).
+    Esta política explica quais dados o aplicativo usa, onde eles ficam e como apagá-los.</p>
 
-    <p>Responsável: desenvolvedor independente.<br>
+    <p>Responsável: Fabio G. S. Cavalcanti (desenvolvedor independente).<br>
     Contato: <a href="mailto:fabiogsantos@gmail.com">fabiogsantos@gmail.com</a></p>
 
     <div class="card resumo">
       <h2>Resumo</h2>
       <ul>
-        <li>O aplicativo <strong>não coleta, não envia e não compartilha</strong> seus dados pessoais
-            com o desenvolvedor ou com terceiros.</li>
-        <li><strong>Não há anúncios, rastreamento, analytics ou SDKs de publicidade.</strong></li>
-        <li>Todos os seus dados (listas de falta, repetidas, trocas, histórico e configurações) ficam
-            <strong>armazenados localmente no seu dispositivo</strong>.</li>
-        <li>O acesso à internet só é usado se <strong>você ativar</strong>, de forma opcional, o backup
-            na sua conta do Google Drive.</li>
+        <li>Para usar o aplicativo é preciso <strong>entrar com uma conta Google</strong>. Seus dados ficam
+            no aparelho e são <strong>sincronizados com um servidor</strong>, para acompanhar você em
+            qualquer aparelho.</li>
+        <li>Seus dados <strong>não são vendidos</strong> nem usados para publicidade. <strong>Não há
+            anúncios, rastreamento ou analytics.</strong></li>
+        <li>Outras pessoas só veem o que você publicar na <strong>Comunidade</strong>, e só se você
+            estiver na região que elas escolheram.</li>
+        <li>Você pode <strong>excluir a conta e todos os dados</strong> a qualquer momento, de dentro do
+            aplicativo — <a href="#excluir-conta">veja como</a>.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>Dados que o aplicativo utiliza</h2>
-      <p>O aplicativo armazena <strong>apenas no seu dispositivo</strong> as informações que você cria
-      ao usá-lo, como:</p>
+      <h2>Conta</h2>
+      <p>O login é feito com a sua <strong>conta Google</strong>. O aplicativo recebe do Google o seu
+      <strong>e-mail</strong>, o <strong>nome</strong> e a <strong>foto do perfil</strong>. O e-mail
+      identifica a conta e nunca é mostrado a outras pessoas; a foto pode aparecer no seu perfil da
+      Comunidade.</p>
+
+      <h2>Dados que você cria no aplicativo</h2>
       <ul>
-        <li>listas de figurinhas que faltam, repetidas e trocas;</li>
-        <li>histórico de contagens;</li>
-        <li>preferências do aplicativo (tema, configurações do scanner, etc.).</li>
+        <li>álbuns, figurinhas que faltam e repetidas;</li>
+        <li>trocas: o nome e o WhatsApp da outra pessoa, o local e a data do encontro, valores e
+            observações que você anotar;</li>
+        <li>histórico de contagens e de alterações nas listas.</li>
       </ul>
-      <p>Esses dados <strong>não são enviados</strong> para o desenvolvedor e permanecem sob seu controle.</p>
+      <p>Esses dados ficam no aparelho e são <strong>sincronizados com o servidor</strong> para que você
+      os veja em outro celular ou no navegador. Eles são <strong>privados</strong>: só a sua conta tem
+      acesso. Preferências do aparelho (tema, ajustes do scanner) não saem dele.</p>
+
+      <h2>Comunidade</h2>
+      <p>A Comunidade mostra pessoas da sua região com quem há troca possível. Para participar você
+      preenche um perfil: <strong>apelido</strong>, <strong>WhatsApp</strong>, <strong>país, CEP, UF,
+      cidade e bairro</strong>, além das cidades e bairros onde quer procurar. O aplicativo então
+      publica as suas <strong>figurinhas que faltam e as repetidas livres</strong>.</p>
+      <ul>
+        <li>Quem tem a sua cidade no filtro vê o seu <strong>apelido, foto, cidade, UF e bairro</strong>
+            e quantas figurinhas vocês podem trocar.</li>
+        <li>O seu <strong>WhatsApp</strong> só aparece para quem tem troca possível com você.</li>
+        <li>O <strong>CEP</strong> não é mostrado a ninguém. As suas listas completas também não: cada
+            pessoa vê só as figurinhas que casam entre vocês dois.</li>
+        <li>Para preencher o endereço a partir do CEP, o CEP é consultado no serviço público
+            <a href="https://viacep.com.br">ViaCEP</a>.</li>
+      </ul>
 
       <h2>Câmera</h2>
-      <p>O aplicativo solicita a permissão de <strong>câmera</strong> para ler, em tempo real, os códigos
-      das figurinhas por reconhecimento de texto (OCR). O processamento das imagens acontece
-      <strong>inteiramente no seu dispositivo</strong>. As imagens da câmera <strong>não são gravadas,
-      armazenadas nem transmitidas</strong> para qualquer servidor.</p>
+      <p>A câmera lê os códigos das figurinhas por reconhecimento de texto (OCR). O processamento é
+      <strong>todo feito no aparelho</strong>; as imagens <strong>não são gravadas nem enviadas</strong>
+      a nenhum servidor.</p>
 
-      <h2>Internet e backup no Google Drive (opcional)</h2>
-      <p>O aplicativo funciona totalmente <strong>offline</strong>. O acesso à internet é usado
-      <strong>somente</strong> quando você opta, de forma voluntária, por ativar a sincronização de
-      backup com o <strong>Google Drive</strong>:</p>
+      <h2>Contatos</h2>
+      <p>Ao registrar uma troca, você pode escolher o WhatsApp da pessoa na <strong>agenda do
+      aparelho</strong>, e o aplicativo confere se o número já está salvo. A agenda é lida
+      <strong>só no aparelho</strong> e não é enviada; apenas o número que você escolher fica gravado
+      na troca.</p>
+
+      <h2>Localização</h2>
+      <p>Só quando você toca em <strong>"Localização atual"</strong> o aplicativo usa o GPS, para marcar
+      o ponto de encontro de uma troca. A coordenada fica gravada naquela troca. O aplicativo não
+      acompanha a sua localização nem a usa em segundo plano.</p>
+
+      <h2>Calendário</h2>
+      <p>Se você pedir, o aplicativo abre o calendário do aparelho com o encontro da troca já
+      preenchido. Quem grava o evento é o próprio app de calendário.</p>
+
+      <h2>Backup no Google Drive (opcional)</h2>
+      <p>Você pode ativar uma cópia de segurança na <strong>pasta oculta do aplicativo no seu Google
+      Drive</strong> (escopo <code>drive.appdata</code>). O aplicativo não acessa os seus outros
+      arquivos. Essa cópia fica na <strong>sua</strong> conta Google.</p>
+
+      <h2>Onde os dados ficam</h2>
       <ul>
-        <li>O login com a conta Google é <strong>opcional</strong> e feito por você dentro do aplicativo.</li>
-        <li>É utilizado apenas o escopo <code>drive.appdata</code>, que dá acesso a uma <strong>pasta
-            oculta e exclusiva do aplicativo</strong> no seu próprio Google Drive. O aplicativo
-            <strong>não acessa</strong> seus outros arquivos, e-mails ou contatos.</li>
-        <li>O backup é um arquivo com os seus dados do aplicativo, guardado nessa pasta da <strong>sua</strong> conta.</li>
-        <li>O desenvolvedor <strong>não possui servidores</strong> e <strong>não tem acesso</strong> à sua
-            conta Google nem ao conteúdo do backup.</li>
+        <li><strong>Supabase</strong> — login e banco de dados do servidor.</li>
+        <li><strong>Cloudflare</strong> — hospeda a versão para navegador.</li>
+        <li><strong>Google</strong> — login e, se você ativar, o backup no Drive.</li>
+        <li><strong>GitHub</strong> — na versão instalada fora da loja, é onde o aplicativo verifica se
+            há atualização.</li>
       </ul>
-      <p>Você pode desconectar a conta e remover o backup a qualquer momento.</p>
+      <p>Esses serviços tratam os dados só para o aplicativo funcionar. Tudo trafega com criptografia
+      (HTTPS). Nada é vendido ou compartilhado para outros fins.</p>
 
-      <h2>Compartilhamento de listas</h2>
-      <p>O aplicativo permite que <strong>você</strong> compartilhe manualmente listas de figurinhas
-      usando o menu de compartilhamento do próprio sistema. Esse envio é feito por sua iniciativa e
-      para o destino que você escolher.</p>
-
-      <h2>Permissões usadas</h2>
+      <h2>Permissões do Android</h2>
       <ul>
-        <li><strong>Câmera</strong> — leitura dos códigos das figurinhas (OCR local).</li>
-        <li><strong>Internet</strong> — apenas para o backup opcional no Google Drive.</li>
-        <li><strong>Vibração</strong> — feedback tátil ao escanear.</li>
+        <li><strong>Câmera</strong> — leitura dos códigos das figurinhas (no aparelho).</li>
+        <li><strong>Internet</strong> — login, sincronização e Comunidade.</li>
+        <li><strong>Contatos</strong> — escolher o WhatsApp da troca na agenda.</li>
+        <li><strong>Localização</strong> — marcar o ponto de encontro, quando você pede.</li>
+        <li><strong>Vibração</strong> — resposta ao escanear.</li>
+        <li><strong>Instalar apps</strong> — só na versão fora da loja, para a atualização automática.</li>
       </ul>
+    </div>
 
-      <h2>Retenção e exclusão de dados</h2>
-      <ul>
-        <li>Seus dados ficam no dispositivo enquanto o aplicativo estiver instalado.</li>
-        <li><strong>Desinstalar</strong> o aplicativo remove os dados locais.</li>
-        <li>Se você usou o backup no Google Drive, pode excluí-lo na pasta do aplicativo dentro da sua conta Google.</li>
-      </ul>
+    <div class="card alerta" id="excluir-conta">
+      <h2>Como excluir a sua conta</h2>
+      <p>Os dados ficam guardados enquanto a conta existir. Para apagar tudo:</p>
+      <ol>
+        <li>Abra o aplicativo no celular ou em
+            <a href="https://app.figurinhas-scanner.workers.dev">app.figurinhas-scanner.workers.dev</a>
+            e entre com a sua conta.</li>
+        <li>Toque no ícone de <strong>perfil</strong>, no alto de qualquer tela.</li>
+        <li>No fim da tela, toque em <strong>Excluir minha conta</strong>, digite
+            <strong>EXCLUIR</strong> e confirme.</li>
+      </ol>
+      <p>A exclusão é <strong>imediata e definitiva</strong>. Ela apaga a conta, os álbuns, as listas,
+      as trocas, as contagens, o perfil e as listas da Comunidade, no servidor e no aparelho. Cópias de
+      segurança automáticas do servidor, quando existem, são descartadas no ciclo normal delas, em até
+      30 dias.</p>
+      <p>Se não conseguir entrar no aplicativo, peça a exclusão pelo e-mail
+      <a href="mailto:fabiogsantos@gmail.com">fabiogsantos@gmail.com</a>, a partir do endereço da conta.
+      O backup no Google Drive, se você ativou, fica no seu Drive e pode ser apagado em
+      <em>Drive &gt; Configurações &gt; Gerenciar apps</em>.</p>
 
-      <h2>Privacidade de crianças</h2>
-      <p>O aplicativo não é direcionado a coletar dados de crianças e <strong>não coleta</strong> dados
-      pessoais de qualquer usuário.</p>
+      <h2>Seus direitos (LGPD)</h2>
+      <p>Você pode pedir acesso, correção ou exclusão dos seus dados. A maior parte disso você faz no
+      próprio aplicativo; para o resto, escreva para o contato acima.</p>
+    </div>
+
+    <div class="card">
+      <h2>Crianças</h2>
+      <p>O aplicativo não é direcionado a menores de 13 anos. A Comunidade envolve contato com outras
+      pessoas pelo WhatsApp; menores devem usá-la com o acompanhamento de um responsável.</p>
 
       <h2>Alterações nesta política</h2>
-      <p>Esta política pode ser atualizada eventualmente. A data de "Última atualização" no topo indica
-      a versão vigente.</p>
+      <p>Esta política pode mudar. A data de "Última atualização" no topo indica a versão vigente.</p>
 
       <h2>Contato</h2>
-      <p>Dúvidas sobre esta política: <a href="mailto:fabiogsantos@gmail.com">fabiogsantos@gmail.com</a>.</p>
+      <p>Dúvidas: <a href="mailto:fabiogsantos@gmail.com">fabiogsantos@gmail.com</a>.</p>
     </div>
   </main>
   <footer>
