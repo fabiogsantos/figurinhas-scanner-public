@@ -1,8 +1,91 @@
-<!doctype html>
-<html lang="pt-br"><head><meta charset="utf-8">
-<title>VouTrocar Figurinhas</title>
-<meta http-equiv="refresh" content="0; url=./privacidade/">
-<link rel="canonical" href="./privacidade/">
-</head><body>
-<p>Política de privacidade: <a href="./privacidade/">/privacidade/</a></p>
-</body></html>
+<!DOCTYPE html>
+<!--
+  Página inicial do VouTrocar Figurinhas (GitHub Pages).
+  É a "página inicial do app" na tela de consentimento do Google (Branding) — precisa mostrar
+  o mesmo nome do app, dizer o que ele faz e ter link para a política de privacidade.
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VouTrocar Figurinhas</title>
+  <meta name="description" content="Organize seu álbum de figurinhas, escaneie as que você tem e encontre pessoas perto de você para trocar as repetidas.">
+  <link rel="icon" href="icone.png">
+  <style>
+    :root { --azul: #2447D6; --amarelo: #F5B800; --texto: #1f2430; --suave: #5b6472; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: var(--texto);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6; background: #f4f6fb;
+    }
+    header { background: var(--azul); color: #fff; padding: 44px 20px 40px; text-align: center; }
+    header img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+    header h1 { margin: 16px 0 6px; font-size: 30px; }
+    header p { margin: 0 auto; max-width: 560px; opacity: .92; font-size: 17px; }
+    .botoes { margin-top: 22px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .botao {
+      display: inline-block; padding: 11px 22px; border-radius: 999px; font-weight: 700;
+      text-decoration: none; background: var(--amarelo); color: #1f2430;
+    }
+    .botao.sec { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.7); }
+    main { max-width: 760px; margin: 0 auto; padding: 28px 20px 40px; }
+    .card {
+      background: #fff; border-radius: 14px; padding: 22px 24px; margin: 18px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,.08);
+    }
+    h2 { color: var(--azul); font-size: 19px; margin: 0 0 8px; }
+    ul { padding-left: 20px; margin: 0; }
+    li { margin: 6px 0; }
+    a { color: var(--azul); }
+    footer { text-align: center; color: var(--suave); font-size: 13px; padding: 0 20px 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="icone.png" alt="Ícone do VouTrocar Figurinhas">
+    <h1>VouTrocar Figurinhas</h1>
+    <p>Organize seu álbum de figurinhas, escaneie as que você tem e encontre pessoas perto de você
+    para trocar as repetidas.</p>
+    <div class="botoes">
+      <a class="botao" href="https://app.figurinhas-scanner.workers.dev">Abrir no navegador</a>
+      <a class="botao sec" href="./privacidade/">Política de privacidade</a>
+    </div>
+  </header>
+  <main>
+    <div class="card">
+      <h2>O que o app faz</h2>
+      <ul>
+        <li><strong>Scanner:</strong> aponte a câmera para o código da figurinha e ele é lido
+            sozinho, sem digitar.</li>
+        <li><strong>Faltantes e repetidas:</strong> veja o que falta no álbum e quantas repetidas
+            você tem de cada uma.</li>
+        <li><strong>Trocas:</strong> registre o que vai receber e entregar, e o app dá baixa nas
+            listas quando a troca é confirmada.</li>
+        <li><strong>Comunidade:</strong> encontre colecionadores da sua região que têm o que você
+            procura, e combine a troca pelo WhatsApp.</li>
+        <li><strong>Vários álbuns e aparelhos:</strong> colecione mais de um álbum (inclusive o dos
+            filhos) e veja tudo igual no celular e no computador.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Conta e privacidade</h2>
+      <p>Para usar o app você entra com a sua conta Google; ela serve para guardar e sincronizar
+      suas listas. Não há anúncios nem rastreamento, e você pode excluir a conta e todos os dados
+      a qualquer momento, pelo próprio app. Os detalhes estão na
+      <a href="./privacidade/">Política de privacidade</a>
+      (<a href="./privacidade/#excluir-conta">como excluir a conta</a>).</p>
+    </div>
+    <div class="card">
+      <h2>Onde usar</h2>
+      <p>No Android e no navegador, em
+      <a href="https://app.figurinhas-scanner.workers.dev">app.figurinhas-scanner.workers.dev</a>.
+      A conta é para maiores de 18 anos; crianças colecionam junto com o responsável, na conta dele.</p>
+    </div>
+  </main>
+  <footer>
+    VouTrocar Figurinhas · desenvolvedor independente ·
+    <a href="mailto:fabiogsantos@gmail.com">fabiogsantos@gmail.com</a>
+  </footer>
+</body>
+</html>
